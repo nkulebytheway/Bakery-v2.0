@@ -58,15 +58,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
-
-// Initialize AOS with optimized settings
-AOS.init({
-    duration: 1200, // Duration of the animation
-    easing: 'ease-in-out', // Type of easing
-    once: true, // Animation happens only once - when element comes into view
-    mirror: false, // No repeat animations
-    offset: 120, // Offset (in pixels) from the original trigger point
-    debounceDelay: 50, // Lower debounce delay
-    throttleDelay: 99, // Lower throttle delay
-});
-
