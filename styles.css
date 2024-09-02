@@ -1,58 +1,57 @@
 /* General Styling */
 body {
-    font-family: 'Georgia', serif; /* Elegant serif font */
+    font-family: 'Georgia', serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f0e3; /* Light cream background */
-    color: #333; /* Darker text color for contrast */
-    scroll-behavior: smooth; /* Enable smooth scrolling */
+    background-color: #f8f0e3;
+    color: #333;
 }
 
 header {
-    background-color: #fddbb0; /* Soft peach background */
+    background-color: #fddbb0;
     color: #333;
     text-align: center;
-    padding: 30px 10px; /* Reduced padding */
+    padding: 30px 10px;
 }
 
 header h1 {
     font-size: 2.5em;
     margin: 0;
-    color: #6d4c41; /* Warm brown */
-    font-family: 'Cookie', cursive; /* Friendly cursive font */
+    color: #6d4c41;
+    font-family: 'Cookie', cursive;
 }
 
 header p {
     font-size: 1.2em;
-    color: #6d4c41; /* Warm brown */
+    color: #6d4c41;
 }
 
 section.gallery {
-    padding: 30px 10px; /* Reduced padding */
+    padding: 30px 10px;
 }
 
 .gallery h2 {
     text-align: center;
     font-size: 2em;
-    color: #d97c7c; /* Light pink */
-    margin-bottom: 20px; /* Reduced margin-bottom */
+    color: #d97c7c;
+    margin-bottom: 20px;
 }
 
 .cake-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centered items */
-    gap: 10px; /* Increased gap for clarity */
+    justify-content: center;
+    gap: 5px;
 }
 
 .cake-item {
-    background-color: transparent; /* Transparent background */
+    background-color: transparent;
     border-radius: 10px;
-    box-shadow: none; /* No shadow */
-    margin: 5px; /* Reduced margin */
-    width: 230px; /* Adjusted width */
+    box-shadow: none;
+    margin: 5px;
+    width: 230px;
     text-align: center;
-    padding: 5px; /* Reduced padding */
+    padding: 5px;
     transition: transform 0.3s ease;
 }
 
@@ -68,74 +67,74 @@ section.gallery {
 }
 
 .cake-item p {
-    font-size: 1em; /* Adjusted font size */
-    color: #333; /* Dark text for contrast */
-    margin-top: 5px; /* Reduced margin-top */
+    font-size: 1em;
+    color: #333;
+    margin-top: 5px;
 }
 
 footer {
-    background-color: #fddbb0; /* Soft peach background */
-    color: #6d4c41; /* Warm brown */
+    background-color: #fddbb0;
+    color: #6d4c41;
     text-align: center;
-    padding: 15px; /* Reduced padding */
+    padding: 15px;
 }
 
 .socials a {
-    margin: 0 5px; /* Reduced margin */
-    color: #6d4c41; /* Warm brown */
+    margin: 0 5px;
+    color: #6d4c41;
     font-size: 1.5em;
     text-decoration: none;
 }
 
 .socials a:hover {
-    color: #d97c7c; /* Light pink */
+    color: #d97c7c;
 }
 
 /* Our Bakers Section */
 .our-bakers {
-    padding: 30px 10px; /* Reduced padding */
-    background-color: #fff; /* White background for contrast */
+    padding: 30px 10px;
+    background-color: #fff;
 }
 
 .our-bakers h2 {
     text-align: center;
     font-size: 2em;
-    color: #d97c7c; /* Light pink */
-    margin-bottom: 20px; /* Reduced margin-bottom */
+    color: #d97c7c;
+    margin-bottom: 20px;
 }
 
 .baker-list {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Reduced gap between the baker items */
+    gap: 10px;
 }
 
 .baker-item {
     text-align: center;
-    width: 200px; /* Adjusted width */
+    width: 200px;
 }
 
 .baker-item img {
-    width: 120px; /* Adjusted size */
-    height: 120px; /* Maintain circular shape */
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 5px; /* Reduced margin-bottom */
-    border: 2px solid #d97c7c; /* Border color matching the theme */
+    margin-bottom: 5px;
+    border: 2px solid #d97c7c;
 }
 
 .baker-info {
-    font-size: 0.9em; /* Adjusted font size */
+    font-size: 0.9em;
     color: #333;
 }
 
 .baker-info h3 {
     margin: 0;
-    color: #d97c7c; /* Light pink */
+    color: #d97c7c;
 }
 
 .baker-info p {
-    margin: 3px 0; /* Reduced margin */
+    margin: 3px 0;
 }
 
 /* Media Queries for Mobile Devices */
@@ -145,60 +144,54 @@ footer {
     header h1 {
         font-size: 2em;
     }
-    
+
     header p {
         font-size: 1em;
     }
-    
+
     .gallery h2 {
         font-size: 1.5em;
     }
-    
-    .cake-list {
-        display: grid; /* Use grid for better layout control */
-        grid-template-columns: 1fr 1fr; /* Two columns layout */
-        gap: 10px; /* Add gap between images */
-    }
-    
+
     .cake-item {
-        width: 100%; /* Full width on small screens */
-        margin: 0; /* Remove margin */
+        width: calc(50% - 10px); /* Two images per row with gap */
+        margin: 5px;
     }
-    
+
     .baker-item {
-        width: 100%; /* Full width on small screens */
+        width: calc(50% - 10px); /* Two bakers per row with gap */
     }
-    
+
     .baker-item img {
-        width: 100px; /* Smaller size for mobile */
-        height: 100px; /* Maintain circular shape */
+        width: 100px;
+        height: 100px;
     }
 }
 
 /* Medium devices (tablets, 601px and up) */
 @media only screen and (min-width: 601px) and (max-width: 992px) {
     .cake-item {
-        width: 45%; /* Responsive width for tablets */
+        width: 45%;
     }
-    
+
     .baker-item {
-        width: 45%; /* Responsive width for tablets */
+        width: 45%;
     }
 }
 
 /* Modal styling */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1000; /* Sit on top */
-    padding-top: 60px; /* Location of the box */
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .modal-content {
@@ -247,10 +240,3 @@ footer {
     from { transform: scale(0) }
     to { transform: scale(1) }
 }
-
-.gallery {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1s ease-out, transform 1s ease-out; /* Slower transition */
-}
-
